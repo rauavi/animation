@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+        }
+
+        .container {
+            position: relative;
+            height: 90vh;
+            width: 90vw;
+            background-color: black;
+        }
+
+        .boll {
+            
+            width: 121px;
+            height: 121px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 80px;
+            position: absolute;
+            left: 0;
+            bottom: 50vh;
+            animation: animatex 3s linear infinite,
+                animatey 1s ease-out infinite alternate;
+        }
+
+        .boll2 {
+           
+            width: 121px;
+            height: 121px;
+            background-color:yellow;
+            border-radius: 80px;
+            position: absolute;
+            left: 0;
+            bottom: 50vh;
+            animation: animatex 4s linear infinite,
+                animatey 1s ease-out infinite alternate;
+        }
+
+        .boll3 {
+           
+           width: 121px;
+           height: 121px;
+           background-color:green;
+           border-radius: 80px;
+           position: absolute;
+           left: 0;
+           bottom: 50vh;
+           animation: animatex 5s linear infinite,
+               animatey 1s ease-out infinite alternate;
+       }
+
+       .boll4 {
+           
+           width: 121px;
+           height: 121px;
+           background-color:orange;
+           border-radius: 80px;
+           position: absolute;
+           left: 0;
+           bottom: 50vh;
+           animation: animatex 6s linear infinite,
+               animatey 1s ease-out infinite alternate;
+       }
+
+       .boll5 {
+           
+           width: 121px;
+           height: 121px;
+           background-color:rgb(32, 0, 244);
+           border-radius: 80px;
+           position: absolute;
+           left: 0;
+           bottom: 50vh;
+           animation: animatex 2s linear infinite,
+               animatey 1s ease-out infinite alternate;
+       }
+
+        @keyframes animatex {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: 102%;
+            }
+
+        }
+
+        @keyframes animatey {
+            from {
+                bottom: 10px;
+            }
+
+            to {
+                bottom: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="boll">
+
+        </div>
+        <div class="boll2">
+
+        </div>
+        <div class="boll3">
+
+        </div>
+        <div class="boll4">
+
+        </div>
+        <div class="boll5">
+
+        </div>
+    </div>
+</body>
+
+</html>
